@@ -9,6 +9,9 @@ spec:
   selector:
     matchLabels:
       app: nginx
+ spec:
+  securityContext:
+    runAsUser: 0
   template:
     metadata:
       labels:
